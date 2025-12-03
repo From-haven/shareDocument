@@ -37,7 +37,11 @@ int main()
         
         for(int i = size-1;i>=0 && stu[size -1].Point == stu[i].Point;i--)
         {
-            fprintf(fpout,"%s-%s(%s)%f\n",&stu[i].STUID, &stu[i].FullName, &stu[i].Gender,&stu[i].Point);
+            fprintf(fpout,"%s-%s(%s)%f\n",
+                &stu[i].STUID,
+                &stu[i].FullName,
+                &stu[i].Gender,
+                &stu[i].Point);
         }
         fclose(fpin);
         fclose(fpout);
